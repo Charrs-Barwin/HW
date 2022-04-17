@@ -24,21 +24,37 @@ class Stack
     end
 
     def enqueue(el)
-      @queue.unshift(el)
+      queue.push(el)
     end
 
     def dequeue
-      @queue.shift
+      queue.shift
     end
 
     def peek
-      @queue.first
+      queue.first
     end
+    private
+    attr :queue
   end
 
 
 
   class Map
-    # need sleep. will finish tommorow
+    def initialize
+      @map = []
+    end
+
+    def set(key, value)
+    end
+
+    def get(key)
+    end
+    
+    def delete(key)
+    end
+    
+    def show
+    end
   end
 
